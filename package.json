@@ -1,0 +1,20 @@
+{
+  "name": "is-stargazer",
+  "description": "Check if user has starred the repository",
+  "author": "amimaro",
+  "version": "0.1.0",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": "amimaro/is-stargazer",
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "*"
+  }
+}
