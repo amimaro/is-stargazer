@@ -13,6 +13,7 @@ npm install --save is-stargazer
 ```javascript
 const isStargazer = require('is-stargazer')
 
+// (user/repos, query)
 isStargazer('amimaro/is-stargazer', 'amimaro')
   .then(
     res => {
