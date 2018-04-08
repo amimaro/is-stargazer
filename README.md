@@ -11,9 +11,19 @@ npm install --save is-stargazer
 ## Usage
 
 ```javascript
-var isStargazer = require('is-stargazer')
+const isStargazer = require('is-stargazer')
 
-isStargazer()  // => true
+isStargazer('amimaro/is-stargazer', 'amimaro')
+  .then(
+    res => {
+      console.log(res)
+    }
+  )
+  .catch(
+    err => {
+      console.error(err)
+    }
+  );
 ```
 
 ## License
@@ -21,6 +31,8 @@ isStargazer()  // => true
 MIT [LICENSE.md](LICENSE.md)
 
 ## Contributing
+
+Pull Requests are welcome.
 
 1. Fork it
 2. Create your feature branch (`git checkout -b new-feature`)
