@@ -24,7 +24,7 @@ isStargazer('amimaro/is-stargazer', 'amimaro')
     err => {
       console.error(err)
     }
-  );
+  )
 ```
 
 ## License
