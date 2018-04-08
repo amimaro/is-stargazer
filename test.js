@@ -3,7 +3,11 @@ import isStargazer from './'
 
 test('check amimaro at amimaro/is-stargazer', t => {
   t.plan(1)
-  return isStargazer('amimaro/is-stargazer', 'amimaro')
+  return isStargazer({
+      repos: 'amimaro/is-stargazer',
+      query: 'amimaro',
+      token: process.env.PERSONAL_ACCESS_TOKEN
+    })
     .then(
       res => {
         console.log('true - ' + res)
@@ -19,7 +23,11 @@ test('check amimaro at amimaro/is-stargazer', t => {
 
 test('check amimaro at amimaro/strobe', t => {
   t.plan(1)
-  return isStargazer('amimaro/strobe', 'amimaro')
+  return isStargazer({
+      repos: 'amimaro/strobe',
+      query: 'amimaro',
+      token: process.env.PERSONAL_ACCESS_TOKEN
+    })
     .then(
       res => {
         console.log('false - ' + res)
@@ -35,7 +43,11 @@ test('check amimaro at amimaro/strobe', t => {
 
 test('check for null', t => {
   t.plan(1)
-  return isStargazer('', '')
+  return isStargazer({
+      repos: '',
+      query: '',
+      token: ''
+    })
     .then(
       res => {
         console.log('null - ' + res)
