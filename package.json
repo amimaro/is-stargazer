@@ -2,7 +2,7 @@
   "name": "is-stargazer",
   "description": "Check if user has starred the repository",
   "author": "amimaro",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "main": "index.js",
   "files": [
     "index.js"
