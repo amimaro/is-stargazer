@@ -13,9 +13,10 @@ module.exports = async function isStargazer(params) {
 }
 
 let getStargazers = async function(repository, token) {
+  const AUTH = token === undefined ? '' : `Bearer ${token}`
   const URI = `https://api.github.com/repos/${repository}/stargazers`
 
-  return await axios.get(URI)
+  return await axios.get(URI, { headers: { Authorization: AUTH } })
 }
 
 let hasStargazer = function(stargazers, username) {
