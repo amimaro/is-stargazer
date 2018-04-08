@@ -1,6 +1,25 @@
 import test from 'ava'
 import isStargazer from './'
 
+test('check amimaro at amimaro/is-stargazer without token', t => {
+  t.plan(1)
+  return isStargazer({
+      repos: 'amimaro/is-stargazer',
+      query: 'amimaro'
+    })
+    .then(
+      res => {
+        console.log('true - ' + res)
+        t.true(res)
+      }
+    )
+    .catch(
+      err => {
+        console.error(err)
+      }
+    )
+})
+
 test('check amimaro at amimaro/is-stargazer', t => {
   t.plan(1)
   return isStargazer({
@@ -46,7 +65,7 @@ test('check for null', t => {
   return isStargazer({
       repos: '',
       query: '',
-      token: ''
+      token: process.env.PERSONAL_ACCESS_TOKEN
     })
     .then(
       res => {
