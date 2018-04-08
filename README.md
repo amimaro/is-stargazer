@@ -13,8 +13,11 @@ npm install --save is-stargazer
 ```javascript
 const isStargazer = require('is-stargazer')
 
-// (user/repos, query)
-isStargazer('amimaro/is-stargazer', 'amimaro')
+isStargazer({
+    repos: 'amimaro/is-stargazer',
+    query: 'amimaro',
+    token: process.env.PERSONAL_ACCESS_TOKEN // optional
+  })
   .then(
     res => {
       console.log(res)
@@ -26,6 +29,8 @@ isStargazer('amimaro/is-stargazer', 'amimaro')
     }
   )
 ```
+
+[How to create a Personal API Access Token?](https://blog.github.com/2013-05-16-personal-api-tokens/)
 
 ## Testing
 
