@@ -2,7 +2,7 @@
   "name": "is-stargazer",
   "description": "Check if user has starred the repository",
   "author": "amimaro",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "index.js",
   "files": [
     "index.js"
@@ -11,7 +11,15 @@
     "test": "ava"
   },
   "repository": "amimaro/is-stargazer",
-  "keywords": ["stargazer", "star", "github", "repository", "npm", "check", "is"],
+  "keywords": [
+    "stargazer",
+    "star",
+    "github",
+    "repository",
+    "npm",
+    "check",
+    "is"
+  ],
   "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0"
