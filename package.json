@@ -11,7 +11,7 @@
     "test": "ava"
   },
   "repository": "amimaro/is-stargazer",
-  "keywords": [],
+  "keywords": ["stargazer", "star", "github", "repository", "npm", "check", "is"],
   "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0"
