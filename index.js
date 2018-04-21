@@ -7,8 +7,7 @@ module.exports = async function isStargazer(params) {
     const stargazers = await getStargazers(params.repos, params.token)
     return hasStargazer(stargazers.data, params.query)
   } catch (err) {
-    console.error(`An error occured: ${err}`)
-    return null
+    throw err
   }
 }
 
