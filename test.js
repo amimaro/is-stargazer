@@ -16,6 +16,7 @@ test('check amimaro at amimaro/is-stargazer without token', t => {
     .catch(
       err => {
         console.error(err)
+        t.fail()
       }
     )
 })
@@ -36,6 +37,7 @@ test('check amimaro at amimaro/is-stargazer', t => {
     .catch(
       err => {
         console.error(err)
+        t.fail()
       }
     )
 })
@@ -56,6 +58,7 @@ test('check amimaro at amimaro/strobe', t => {
     .catch(
       err => {
         console.error(err)
+        t.fail()
       }
     )
 })
@@ -76,6 +79,7 @@ test('check for null', t => {
     .catch(
       err => {
         console.error(err)
+        t.pass()
       }
     )
 })
